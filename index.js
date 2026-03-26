@@ -11,13 +11,13 @@ let start = false;
 let isShowingSequence = false;
 let currentRound = 1;
 
-document.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && !isShowingSequence) {
+document.addEventListener("click", () => {
+    
         start = true;
         currentRound = 1;
         user.length = 0;
         playSequence();
-    }
+    
 
 });
 
@@ -48,7 +48,7 @@ function playSequence() {
         isShowingSequence = false;
        // console.log(`Round ${currentRound}: now click the buttons in the same order.`);
         document.getElementById("guide").textContent = `Round ${currentRound}: now click the buttons in the same order.`;
-    }, currentRound * 800);
+    }, currentRound * 950);
 }
 
 function evalv(n) {
