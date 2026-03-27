@@ -8,10 +8,10 @@
 <body>
     <h1>Welcome to Samson</h1>
     <div id="main">
-        <button onclick="evalv(1)" ><div class="bx1" id="1"  style="background-color: red"></div> </button>
-      <button onclick="evalv(2)">  <div class="bx1" id="2" style="background-color: blue;"></div></button>
-        <button onclick="evalv(3)"><div class="bx1" id="3" style="background-color: yellow;"></div></button>
-       <button onclick="evalv(4)"><div class="bx1" id="4" style="background-color: green;"></div></button>
+        <button type="button" onclick="evalv(event, 1)"><div class="bx1" id="1"  style="background-color: red"></div></button>
+        <button type="button" onclick="evalv(event, 2)"><div class="bx1" id="2" style="background-color: blue;"></div></button>
+        <button type="button" onclick="evalv(event, 3)"><div class="bx1" id="3" style="background-color: yellow;"></div></button>
+        <button type="button" onclick="evalv(event, 4)"><div class="bx1" id="4" style="background-color: green;"></div></button>
     </div>
     <h2 id="guide">Click on Page to Start</h2>
 </body>
@@ -21,16 +21,11 @@
     position: relative;
 
     display: flex;
-
-    /* flex-direction: column; */
     justify-content: center;
-    /* gap: 10px; */
     align-items: center;
     flex-wrap: wrap;
     width: 400px;
     height: 400px;
-    
-    /* border: 1px solid black; */
 }
 body{
     display: flex;
